@@ -4413,43 +4413,40 @@ fieldset:disabled .btn {
 }
 .cardd {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between links */
+  padding: 10px;
   height: 70px;
   width: 350px;
+  z-index: 10;
   position: relative; /* Ensure proper positioning for child elements */
   margin: 0 auto; /* Center horizontally within its parent container */
-  transform: translateX(98px);
- /* Adjust this value as needed to center it perfectly */
 }
 
-.cardd svg {
-  position: absolute;
-  display: flex;
-  width: 60%;
-  height: 100%;
-  font-size: 24px;
-  font-weight: 700;
-  opacity: 1;
-  transition: opacity 0.25s;
-  z-index: 2;
-  padding: 0.25rem;
-  cursor: pointer;
-}
-
-.cardd .social-link1,
-.cardd .social-link2,
-.cardd .social-link3,
-.cardd .social-link4,
-.cardd .social-link5 {
-  position: relative;
+/* Child elements */
+.cardd a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  border-radius: 50%;
+  background-color: #000; /* Ensure the links have a background color */
+  text-decoration: none;
   color: whitesmoke;
   font-size: 24px;
-  text-decoration: none;
   transition: 0.25s;
-  border-radius: 50px;
+  position: relative;
+}
+
+.cardd svg {
+  width: 100%; /* Ensure the SVG scales to the size of the parent */
+  height: 100%; /* Ensure the SVG scales to the size of the parent */
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .cardd svg {
@@ -12199,7 +12196,7 @@ html {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 30;
+  z-index: 10;
 
   /* Add rounded corners effect with smooth edges */
   border-radius: 30px; /* Adjust this value to control the rounding amount */
