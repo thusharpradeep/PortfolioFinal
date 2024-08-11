@@ -9047,8 +9047,7 @@ fieldset:disabled .btn {
 }
 .bg-lightt {
   --bs-bg-opacity: 1;
-  background-color: rgb(3, 3, 3) !important;
-  
+  background-color: rgb(12, 12, 12) !important;
 }
 
 .bg-dark {
